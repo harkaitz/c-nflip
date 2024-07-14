@@ -1,0 +1,12 @@
+
+## -- BLOCK:c --
+*.o
+*.a
+*.so
+*.so.*
+TAGS
+FLYCHECK
+.make.dryrun
+.make.dryrun.2
+.make.environment
+## -- BLOCK:c --
