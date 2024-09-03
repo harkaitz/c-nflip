@@ -4,17 +4,17 @@
 all:
 PROJECT   =c-nflip
 VERSION   =1.0.0
-CC        =gcc -Wall -std=c99
-PROGS     =$(BUILDDIR)/nflip$(EXE) 
+CC        =gcc -Wall -g3 -std=c99
 PREFIX    =/usr/local
-BUILDDIR ?=/home/harkaitz/.build
+BUILDDIR ?=${HOME}/.build
+PROGS     =$(BUILDDIR)/nflip$(EXE)
 
 all: $(PROGS)
 clean:
 	rm -f $(BUILDDIR)/nflip$(EXE)
 install: $(PROGS)
-	mkdir -p $(PREFIX)/bin
-	cp $(PROGS) $(PREFIX)/bin
+	mkdir -p $(DESTDIR)$(PREFIX)/bin
+	cp $(PROGS) $(DESTDIR)$(PREFIX)/bin
 check:
 
 $(BUILDDIR)/nflip$(EXE): nflip.c

@@ -1,0 +1,2 @@
+nflip-l64-%v.tar.gz     hcross                       -d %d      hgmake clean all install
+nflip-w64-%v.zip        hcross -t x86_64-w64-mingw32 -d %d -p / hgmake clean all install
