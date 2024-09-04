@@ -6,7 +6,7 @@ PROJECT   =c-nflip
 VERSION   =1.0.0
 CC        =gcc -Wall -g3 -std=c99
 PREFIX    =/usr/local
-BUILDDIR ?=${HOME}/.build
+BUILDDIR ?=.build
 PROGS     =$(BUILDDIR)/nflip$(EXE)
 
 all: $(PROGS)
