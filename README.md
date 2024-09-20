@@ -72,6 +72,11 @@ Example with flipping and spanish notation.
     ═══════════════════════════════════════════╬════════════
      Net:                                      ║    370,36€
 
+## Style guide
+
+This project follows the OpenBSD kernel source file style guide (KNF).
+
+Read the guide [here](https://man.openbsd.org/style).
 
 ## Collaborating
 
